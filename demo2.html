@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="plugins/element-test/system.css">
+    <link rel="stylesheet" href="plugins/element-test/app.css">
+    <link rel="stylesheet" href="plugins/element-test/style-black.css">
+    <link rel="stylesheet" href="plugins/element-test/element.css">
+
+    <!--<link rel="stylesheet" href="plugins/element/index.css">-->
+
+    <!-- 引入组件库 -->
+    <script src="plugins/vue.min.js"></script>
+    <script src="plugins/element/index.js"></script>
+    <script src="plugins/jquery.min.js"></script>
+
+    <style>
+        .el-table--scrollable-y .el-table__body-wrapper {
+            z-index: 3;
+        }
+
+        .el-table tr {
+            background-color: #252831;
+        }
+        .el-table__fixed-footer-wrapper {
+            z-index: 2;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<template id="app">
+    <el-table
+            :data="tableData"
+            border
+            :summary-method="getColumns"
+
+            show-summary
+            style="width: 800px; margin-top: 20px"
+            :height="tableHeight">
+        <el-table-column
+                prop="id"
+                label="ID"
+                width="180"
+                fixed="left">
+        </el-table-column>
+        <el-table-column
+                prop="name"
+                label="姓名"
+                fixed="left">
+        </el-table-column>
+        <el-table-column
+                prop="amount1"
+                label="数值 1（元）"
+                fixed="left">
+        </el-table-column>
+        <el-table-column
+                prop="amount2"
+                label="数值 2（元）"
+                fixed="left">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+        <el-table-column
+                prop="amount3"
+                label="数值 3（元）">
+        </el-table-column>
+    </el-table>
+
+
+</template>
+
+
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                tableHeight: 0,
+                tableData: [{
+                    id: '12987122',
+                    name: '王小虎',
+                    amount1: '234',
+                    amount2: '3.2',
+                    amount3: 10
+                }, {
+                    id: '12987123',
+                    name: '王小虎',
+                    amount1: '165',
+                    amount2: '4.43',
+                    amount3: 12
+                }, {
+                    id: '12987124',
+                    name: '王小虎',
+                    amount1: '324',
+                    amount2: '1.9',
+                    amount3: 9
+                }, {
+                    id: '12987125',
+                    name: '王小虎',
+                    amount1: '621',
+                    amount2: '2.2',
+                    amount3: 17
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }, {
+                    id: '12987126',
+                    name: '王小虎',
+                    amount1: '539',
+                    amount2: '4.1',
+                    amount3: 15
+                }]
+            };
+        },
+        mounted:function() {
+            var that = this;
+            that.tableHeight = window.innerHeight - 50;
+
+
+            // that.tableHeight =  document.body.clientHeight - 80 + "px";
+            window.onresize = () => {
+                that.tableHeight = window.innerHeight - 80 + "px";
+            };
+
+
+            // 合计行
+            this.setDHtml();
+        },
+        methods: {
+            // 获取columns
+            getColumns(param) {
+                const { columns } = param;
+                this.columns = columns;
+
+                // 合计行
+                this.setHtml();
+                return [];
+            },
+            setHtml: function () {
+                let html = "";
+                html = this.addRow(html,"在位人数");
+                html = this.addRow(html,"休假人数");
+                html = this.addRow(html,"总情况");
+
+                $(".el-table__fixed-footer-wrapper").eq(0).children(".el-table__footer").eq(0).children("tbody").eq(0).html(html);
+
+            },
+            addRow: function (html,row){
+                html += "<tr>";
+                for(let i = 4; i <= 13; i++) {
+                    if (i == 4) {
+                        html = this.addCellCenter(html, row, 4, 1, false, 1);
+                    }else {
+                        html = this.addCell(html, row, 1, 1, true, i);
+                    }
+                }
+                html += "</tr>";
+                return html;
+            },
+            addDRow: function (html,row){
+                html += "<tr>";
+                for(let i = 1; i <= 13; i++) {
+                    if (i <= 4) {
+                        html = this.addCell(html, row, 1, 1, true, i);
+                    }else {
+                        html = this.addCell(html, row, 1, 1, false, i);
+                    }
+                }
+                html += "</tr>";
+                return html;
+            },
+            addCellCenter: function(html,data,colNum, rowNum, isHidden, columnIndex) {
+                html += "    <td colspan='" + colNum + "' rowspan='" + rowNum + "' class='el-table_1_column_" + columnIndex + (isHidden? " is-hidden": "") + " is-leaf'>     ";
+                html += "        <div class='cell' style='text-align: center;'>" + (data == null ? "" : data) + "</div>                                             ";
+                html += "    </td>                                                                          ";
+                return html;
+            },
+            addCell: function(html,data,colNum, rowNum, isHidden, columnIndex) {
+                html += "    <td colspan='" + colNum + "' rowspan='" + rowNum + "' class='el-table_1_column_" + columnIndex + (isHidden? " is-hidden": "") + " is-leaf'>     ";
+                html += "        <div class='cell'>" + (data == null ? "" : data) + "</div>                                             ";
+                html += "    </td>                                                                          ";
+                return html;
+            },
+            setDHtml: function() {
+                let dHtml = "";
+                dHtml = this.addDRow(dHtml, "&nbsp;");
+                dHtml = this.addDRow(dHtml, "&nbsp;");
+                dHtml = this.addDRow(dHtml, "&nbsp;");
+
+                $(".el-table__footer-wrapper").eq(0).children("table").eq(0).children(".has-gutter").eq(0).html(dHtml);
+            }
+        }
+    });
+</script>
+</body>
+</html>
